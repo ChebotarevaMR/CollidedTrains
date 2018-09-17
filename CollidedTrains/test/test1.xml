@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<DataRailwaySystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Stations>
+    <string>A</string>
+    <string>B</string>
+    <string>C</string>
+  </Stations>
+  <Paths>
+    <PathStations>
+      <Begin>A</Begin>
+      <End>B</End>
+      <Distance>5</Distance>
+    </PathStations>
+    <PathStations>
+      <Begin>B</Begin>
+      <End>C</End>
+      <Distance>10</Distance>
+    </PathStations>
+  </Paths>
+  <Trains>
+    <RouteTrain>
+      <Route>
+        <string>A</string>
+        <string>B</string>
+      </Route>
+    </RouteTrain>
+    <RouteTrain>
+      <Route>
+        <string>C</string>
+        <string>B</string>
+		<string>A</string>
+      </Route>
+    </RouteTrain>
+  </Trains>
+</DataRailwaySystem>
